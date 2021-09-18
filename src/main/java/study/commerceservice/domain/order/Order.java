@@ -23,7 +23,7 @@ public class Order {
     @Column(name = "order_id")
     private Long id;
 
-    @GeneratedValue(generator = "ORDER_NO_SEQ", strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ORDER_NO_SEQ")
     private String orderNumber;
     private Long memberId;
     private LocalDateTime orderDate;
